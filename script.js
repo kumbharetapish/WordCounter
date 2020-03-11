@@ -1,0 +1,24 @@
+const input = document.getElementById("text");
+let character = document.getElementById("char");
+let wordShow = document.getElementById("word");
+let wightSpace = document.getElementById("wightSpace");
+let lineCount = document.getElementById("lineCount");
+("wightSpace");
+("lineCount");
+let wordLength;
+let characterLength;
+let wightSpaceLength;
+let lineCou;
+input.oninput = () => {
+  let value = input.value;
+  word = value.split(" ");
+  const patt1 = /\s/g;
+  var result = value.match(patt1);
+  lineCou = value.split("\n");
+  character.innerHTML = "character :" + value.length;
+  wordShow.innerHTML = "word :" + word.length;
+  wightSpace.innerHTML = "Wight Space : " + result.length;
+  lineCount.innerHTML = "Line :" + lineCou.length;
+  console.log(value);
+  console.log(lineCou.length);
+};
